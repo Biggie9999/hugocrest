@@ -171,7 +171,7 @@ export default function TransferPage() {
           {/* Amount Banner */}
           <div style={{ background: 'linear-gradient(135deg, #047857 0%, #d4b97a 100%)', padding: '24px', textAlign: 'center' }}>
             <div style={{ fontSize: 'calc(12px + var(--font-add, 0px))', color: 'rgba(255,255,255,0.8)', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '6px' }}>Amount Transferred</div>
-            <div style={{ fontSize: 'calc(36px + var(--font-add, 0px))', fontWeight: '300', color: '#fff', letterSpacing: '-0.5px' }}>CHF {successReceipt.amount.toLocaleString(undefined, { minimumFractionDigits: 2 })}</div>
+            <div style={{ fontSize: 'calc(36px + var(--font-add, 0px))', fontWeight: '300', color: '#fff', letterSpacing: '-0.5px' }}>£{successReceipt.amount.toLocaleString(undefined, { minimumFractionDigits: 2 })}</div>
           </div>
 
           {/* Details */}
@@ -247,7 +247,7 @@ export default function TransferPage() {
               <div style={{ display: 'flex', flexDirection: 'column' }}>
                 <span className={styles.selectedAccount}>{fromAccount.name}</span>
                 <span style={{ fontSize: 'calc(12px + var(--font-add, 0px))', color: '#666e71', marginTop: '2px' }}>
-                  Balance: CHF {Math.abs(fromAccount.balance).toLocaleString(undefined, { minimumFractionDigits: 2 })}
+                  Balance: £{Math.abs(fromAccount.balance).toLocaleString(undefined, { minimumFractionDigits: 2 })}
                 </span>
               </div>
             ) : (
@@ -266,7 +266,7 @@ export default function TransferPage() {
               <div style={{ display: 'flex', flexDirection: 'column' }}>
                 <span className={styles.selectedAccount}>{toAccount.name}</span>
                 <span style={{ fontSize: 'calc(12px + var(--font-add, 0px))', color: '#666e71', marginTop: '2px' }}>
-                  {(toAccount.type === 'external' || toAccount.id.startsWith('ext-')) ? `Account Number: ${toAccount.account_number || 'Unknown'}` : `Balance: CHF ${Math.abs(toAccount.balance).toLocaleString(undefined, { minimumFractionDigits: 2 })}`}
+                  {(toAccount.type === 'external' || toAccount.id.startsWith('ext-')) ? `Account Number: ${toAccount.account_number || 'Unknown'}` : `Balance: £${Math.abs(toAccount.balance).toLocaleString(undefined, { minimumFractionDigits: 2 })}`}
                 </span>
               </div>
             ) : (
@@ -281,7 +281,7 @@ export default function TransferPage() {
         {/* Amount Input */}
         <div className={styles.selectRow} style={{ borderBottom: 'none' }}>
           <div className={styles.selectText} style={{ width: '100%' }}>
-            <div style={{ fontSize: 'calc(14px + var(--font-add, 0px))', color: '#666e71', marginBottom: '8px' }}>Amount (CHF)</div>
+            <div style={{ fontSize: 'calc(14px + var(--font-add, 0px))', color: '#666e71', marginBottom: '8px' }}>Amount (£)</div>
             <input 
               type="number" 
               placeholder="0.00" 
@@ -453,7 +453,7 @@ export default function TransferPage() {
                     >
                       <div className={styles.accountName}>{account.name}</div>
                       <div className={styles.accountDetails}>
-                        {account.account_number} {account.type === 'external' ? '' : `(${account.type === 'loan' ? 'Outstanding' : 'Available'}: CHF ${Math.abs(account.balance).toLocaleString(undefined, { minimumFractionDigits: 2 })})`}
+                        {account.account_number} {account.type === 'external' ? '' : `(${account.type === 'loan' ? 'Outstanding' : 'Available'}: £${Math.abs(account.balance).toLocaleString(undefined, { minimumFractionDigits: 2 })})`}
                       </div>
                     </div>
                   ))}

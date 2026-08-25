@@ -41,7 +41,7 @@ export default function DashboardPage() {
     setActivatedDeals((prev) => ({ ...prev, [deal]: true }));
 
   const deals = [
-    { id: 'zattoo', label: 'Zattoo Premium', badge: 'Subscription Only', amount: 'CHF 20 cash back', exp: 'Expires 06/28/26' },
+    { id: 'zattoo', label: 'Zattoo Premium', badge: 'Subscription Only', amount: '£20 cash back', exp: 'Expires 06/28/26' },
     { id: 'coop',     label: 'Coop',       badge: undefined,           amount: '10% cash back',  exp: 'Expires 05/31/26' },
     { id: 'dieci', label: 'Dieci Pizza', badge: undefined,      amount: '10% cash back',  exp: 'Expires 05/31/26' },
   ];
@@ -117,7 +117,7 @@ export default function DashboardPage() {
                           <div className={styles.accountNumber}>...{acc.account_number.slice(-4)}</div>
                         </div>
                         <div className={styles.accountBalance}>
-                          <div className={styles.balanceAmount}>CHF {Math.abs(acc.balance).toLocaleString(undefined, { minimumFractionDigits: 2 })}</div>
+                          <div className={styles.balanceAmount}>£{Math.abs(acc.balance).toLocaleString(undefined, { minimumFractionDigits: 2 })}</div>
                           <div className={styles.balanceLabel}>{acc.balance >= 0 ? 'Available balance' : 'Outstanding balance'}</div>
                         </div>
                         <button
@@ -147,7 +147,7 @@ export default function DashboardPage() {
                           <div className={styles.accountNumber}>...{acc.account_number.slice(-4)}</div>
                         </div>
                         <div className={styles.accountBalance}>
-                          <div className={styles.balanceAmount}>CHF {Math.abs(acc.balance).toLocaleString(undefined, { minimumFractionDigits: 2 })}</div>
+                          <div className={styles.balanceAmount}>£{Math.abs(acc.balance).toLocaleString(undefined, { minimumFractionDigits: 2 })}</div>
                           <div className={styles.balanceLabel}>{acc.balance >= 0 ? 'Available balance' : 'Outstanding balance'}</div>
                         </div>
                         <button
@@ -177,7 +177,7 @@ export default function DashboardPage() {
                           <div className={styles.accountNumber}>...{acc.account_number.slice(-4)}</div>
                         </div>
                         <div className={styles.accountBalance}>
-                          <div className={styles.balanceAmount}>CHF {Math.abs(acc.balance).toLocaleString(undefined, { minimumFractionDigits: 2 })}</div>
+                          <div className={styles.balanceAmount}>£{Math.abs(acc.balance).toLocaleString(undefined, { minimumFractionDigits: 2 })}</div>
                           <div className={styles.balanceLabel}>{acc.balance >= 0 ? 'Available balance' : 'Outstanding balance'}</div>
                         </div>
                         <button

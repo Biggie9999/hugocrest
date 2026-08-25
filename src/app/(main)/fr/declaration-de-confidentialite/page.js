@@ -59,7 +59,7 @@ export default function Page() {
 <li>Limitation du traitement des données personnelles,</li>
 <li>Révocation du consentement donné pour le traitement des données personnelles,</li>
 <li>la suppression et l’opposition aux données personnelles collectées.</li>
-<li>Si la fourniture de renseignements, l’émission ou la transmission de données entraîne des frais disproportionnés, la banque peut exiger une participation aux frais à hauteur de 300 CHF maximum.</li>
+<li>Si la fourniture de renseignements, l’émission ou la transmission de données entraîne des frais disproportionnés, la banque peut exiger une participation aux frais à hauteur de 300 £maximum.</li>
 </ul>
 </div><h3 id="brxe-ftjmyv" class="brxe-heading daten-heading">8. destinataires des données personnelles</h3><div id="brxe-oympxg" class="brxe-text"><p>Les données personnelles ne sont traitées que par les personnes qui en ont besoin pour remplir des obligations contractuelles ou légales et pour défendre nos intérêts légitimes. Si cela est nécessaire, les prestataires de services et les tiers (par exemple, les partenaires d’externalisation) ont accès aux données. Dans ce cas, le secret bancaire et les autres dispositions légales sont respectés.    </p>
 <p>Les prestataires de services et les tiers en tant que destinataires de données personnelles peuvent être par exemple  </p>

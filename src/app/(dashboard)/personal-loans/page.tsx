@@ -16,7 +16,7 @@ export default function PersonalLoansPage() {
         <div style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: '16px', borderBottom: '1px solid #eeeeee', marginBottom: '16px' }}>
           <div>
             <div style={{ color: '#666e71', fontSize: 'calc(14px + var(--font-add, 0px))' }}>Current Balance</div>
-            <div style={{ color: '#424242', fontSize: 'calc(24px + var(--font-add, 0px))', fontWeight: 'bold' }}>CHF 4,120.50</div>
+            <div style={{ color: '#424242', fontSize: 'calc(24px + var(--font-add, 0px))', fontWeight: 'bold' }}>£4,120.50</div>
           </div>
           <div style={{ textAlign: 'right' }}>
             <div style={{ color: '#666e71', fontSize: 'calc(14px + var(--font-add, 0px))' }}>Next Payment Due</div>
@@ -31,7 +31,7 @@ export default function PersonalLoansPage() {
           </div>
           <div style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0', borderBottom: '1px solid #f9f9f9' }}>
             <span style={{ color: '#666e71', fontSize: 'calc(14px + var(--font-add, 0px))' }}>Original Loan Amount</span>
-            <span style={{ color: '#424242', fontSize: 'calc(14px + var(--font-add, 0px))', fontWeight: '500' }}>CHF 10,000.00</span>
+            <span style={{ color: '#424242', fontSize: 'calc(14px + var(--font-add, 0px))', fontWeight: '500' }}>£10,000.00</span>
           </div>
           <div style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0' }}>
             <span style={{ color: '#666e71', fontSize: 'calc(14px + var(--font-add, 0px))' }}>Remaining Term</span>

@@ -66,7 +66,7 @@ const translations = {
 
 
 export default function LoginPage() {
-  const [lang, setLang] = useState('de');
+  const [lang, setLang] = useState('en');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -104,12 +104,7 @@ export default function LoginPage() {
           alt="Hugocrest" 
           style={{ width: '250px' }}
         />
-        <div className="lang-switcher" style={{ fontSize: 'calc(14px + var(--font-add, 0px))', color: "#666e71", display: "flex", gap: "15px" }}>
-          <span onClick={() => setLang('de')} style={{ cursor: 'pointer', fontWeight: lang === 'de' ? '600' : '400' }}>deutsch</span>
-          <span onClick={() => setLang('fr')} style={{ cursor: 'pointer', fontWeight: lang === 'fr' ? '600' : '400' }}>français</span>
-          <span onClick={() => setLang('en')} style={{ cursor: 'pointer', fontWeight: lang === 'en' ? '600' : '400' }}>english</span>
-          <span onClick={() => setLang('it')} style={{ cursor: 'pointer', fontWeight: lang === 'it' ? '600' : '400' }}>italiano</span>
-        </div>
+        
       </header>
 
 
@@ -215,7 +210,7 @@ export default function LoginPage() {
       </main>
 
       <footer style={{ padding: '40px', textAlign: 'center', fontSize: 'calc(14px + var(--font-add, 0px))', color: '#666e71', fontStyle: 'italic' }}>
-        Die Nutzung des Fernsupports ist nur nach Kontaktaufnahme mit der E-Banking-Hotline möglich.
+        Remote support is only available after contacting the e-banking hotline.
       </footer>
     </div>
   );

@@ -89,7 +89,7 @@ export default function Page() {
           <li>Right to withdraw consent</li>
           <li>Right to erasure and objection</li>
         </ul>
-        <p>If providing information or transferring data involves disproportionate effort, the Bank may charge a cost contribution of up to CHF 300.</p>
+        <p>If providing information or transferring data involves disproportionate effort, the Bank may charge a cost contribution of up to £300.</p>
       </Section>
 
       <Section num="8" title="Recipients of Personal Data">

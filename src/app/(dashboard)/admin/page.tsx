@@ -342,7 +342,7 @@ export default function AdminPage() {
     if (error) {
       showMessage('error', error.message);
     } else {
-      setSuccessModalText(`Bank account '${newAccName}' created successfully with balance CHF ${isNaN(num) ? 0 : num}.`);
+      setSuccessModalText(`Bank account '${newAccName}' created successfully with balance £${isNaN(num) ? 0 : num}.`);
       setShowSuccessModal(true);
       setNewAccName('Checking Account');
       setNewAccBalance('0');
@@ -457,7 +457,7 @@ export default function AdminPage() {
             </select>
           </div>
           <div className={styles.col}>
-            <label className={styles.label}>Initial Balance (CHF)</label>
+            <label className={styles.label}>Initial Balance (£)</label>
             <input type="number" className={styles.input} value={newAccBalance} onChange={e => setNewAccBalance(e.target.value)} placeholder="0" />
           </div>
         </div>
@@ -574,7 +574,7 @@ export default function AdminPage() {
             <h2>Account Controls</h2>
             <div className={`${styles.row} ${styles.rowAlignBottom}`}>
               <div className={styles.col}>
-                <label className={styles.label}>Set New Balance (CHF)</label>
+                <label className={styles.label}>Set New Balance (£)</label>
                 <input type="number" className={styles.input} value={newBalance} onChange={e => setNewBalance(e.target.value)} placeholder={`Current: ${selectedAccount.balance}`} />
               </div>
               <div className={styles.col}>
@@ -610,7 +610,7 @@ export default function AdminPage() {
                 </select>
               </div>
               <div className={styles.col}>
-                <label className={styles.label}>Amount (CHF)</label>
+                <label className={styles.label}>Amount (£)</label>
                 <input type="number" className={styles.input} value={txnAmount} onChange={e => setTxnAmount(e.target.value)} placeholder="e.g. 5000" />
               </div>
             </div>

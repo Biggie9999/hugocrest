@@ -23,7 +23,7 @@ export default function EducationPage() {
           </div>
           <div style={{ backgroundColor: '#f9f9f9', padding: '16px', borderRadius: '6px', border: '1px solid #eeeeee' }}>
             <h3 style={{ fontSize: 'calc(14px + var(--font-add, 0px))', color: '#424242', marginBottom: '8px' }}>Monthly Spend</h3>
-            <div style={{ fontSize: 'calc(24px + var(--font-add, 0px))', fontWeight: 'bold', color: '#424242' }}>CHF 4,250</div>
+            <div style={{ fontSize: 'calc(24px + var(--font-add, 0px))', fontWeight: 'bold', color: '#424242' }}>£4,250</div>
             <div style={{ fontSize: 'calc(12px + var(--font-add, 0px))', color: '#999999', marginTop: '4px' }}>In line with budget</div>
           </div>
         </div>

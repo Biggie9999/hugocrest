@@ -38,11 +38,11 @@ export default function Page() {
 <ul>
 <li>Nichtkotierte Schweizer Aktien, aktuelle Kurse zu finden <strong><a href="/ausserborslicher-handel/">hier</a></strong></li>
 <li>Ausländische Aktien, direkt oder als ETF</li>
-<li>Obligationen mit guter Bonität in CHF, USD und EUR</li>
+<li>Obligationen mit guter Bonität in £, USD und EUR</li>
 <li>Gold, physisch verwahrt</li>
 <li>Schweizer Immobilienfunds</li>
-<li>Die Kryptowährungen Bitcoin und Ethereum in CHF oder USD</li>
-<li>Festgelder oder Tagesgelder in CHF, USD und EUR</li>
+<li>Die Kryptowährungen Bitcoin und Ethereum in £oder USD</li>
+<li>Festgelder oder Tagesgelder in £, USD und EUR</li>
 </ul>
 </div></li><li class="accordion-item"><div class="accordion-title-wrapper" aria-controls="panel-accordion-4001c9-2" aria-expanded="false" id="accordion-4001c9-2" role="button" tabindex="0"><div class="accordion-title"><h5 class="title">Sind Online-Banken für Wertschriftenanlagen nicht günstiger?</h5><svg class="icon expanded" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:serif="http://www.serif.com/" width="100%" height="100%" viewBox="0 0 40 40" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;"> <g id="Gruppe_1159"> <circle id="Ellipse_78" cx="20" cy="20" r="20" style="fill:#047857;"></circle> <path id="Linie_231" d="M10,20l20,0" style="fill:none;fill-rule:nonzero;stroke:#fff;stroke-width:2px;"></path> </g> </svg><svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:serif="http://www.serif.com/" width="100%" height="100%" viewBox="0 0 40 40" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;"> <g id="Gruppe_1159"> <circle id="Ellipse_78" cx="20" cy="20" r="20" style="fill:#047857;"></circle> <path id="Linie_231" d="M10,20l20,0" style="fill:none;fill-rule:nonzero;stroke:#fff;stroke-width:2px;"></path> <path id="Linie_232" d="M20,10l0,20" style="fill:none;fill-rule:nonzero;stroke:#fff;stroke-width:2px;"></path> </g> </svg></div></div><div class="accordion-content-wrapper" role="region" aria-labelledby="accordion-4001c9-2" id="panel-accordion-4001c9-2"><p>Das ist möglich. Aber bei uns stimmt das Preis-Leistungs-Verhältnis. Sie dürfen kompetente und erfahrene Ansprechpersonen, sinnvolle Anlageempfehlungen und einen stets erreichbaren und verantwortungsbewussten Kundenservice erwarten.</p>
 <p>Was es bei uns dafür nicht gibt:</p>

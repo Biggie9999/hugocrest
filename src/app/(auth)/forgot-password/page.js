@@ -23,7 +23,7 @@ const translations = {
     info: "Informationen",
     security: "Sicherheit",
     help: "Hilfe",
-    remote_text: "Die Nutzung des Fernsupports ist nur nach Kontaktaufnahme mit der E-Banking-Hotline möglich.",
+    remote_text: "Remote support is only available after contacting the e-banking hotline.",
     remote_win: "Fernsupport Windows-Benutzer",
     remote_mac: "Fernsupport Apple-Benutzer"
   },
@@ -97,7 +97,7 @@ const translations = {
 
 
 export default function ForgotPasswordPage() {
-  const [lang, setLang] = useState('de');
+  const [lang, setLang] = useState('en');
   const router = useRouter();
   const t = translations[lang];
 
@@ -110,12 +110,7 @@ export default function ForgotPasswordPage() {
           alt="Hugocrest" 
           style={{ width: '250px' }}
         />
-        <div className="lang-switcher" style={{ fontSize: 'calc(14px + var(--font-add, 0px))', color: "#666e71", display: "flex", gap: "15px" }}>
-          <span onClick={() => setLang('de')} style={{ cursor: 'pointer', fontWeight: lang === 'de' ? '600' : '400' }}>deutsch</span>
-          <span onClick={() => setLang('fr')} style={{ cursor: 'pointer', fontWeight: lang === 'fr' ? '600' : '400' }}>français</span>
-          <span onClick={() => setLang('en')} style={{ cursor: 'pointer', fontWeight: lang === 'en' ? '600' : '400' }}>english</span>
-          <span onClick={() => setLang('it')} style={{ cursor: 'pointer', fontWeight: lang === 'it' ? '600' : '400' }}>italiano</span>
-        </div>
+        
       </header>
 
 

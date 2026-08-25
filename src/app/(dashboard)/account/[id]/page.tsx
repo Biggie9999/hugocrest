@@ -181,7 +181,7 @@ export default function AccountHistoryPage() {
           <span className={styles.balanceLabel}>{isLoan ? 'Outstanding' : 'Available'}</span>
         </div>
         <div className={styles.balanceBlock} style={{ marginTop: '4px' }}>
-          <span className={styles.currency}>CHF</span>
+          <span className={styles.currency}>£</span>
           <span className={styles.balanceAmount}>
             {Math.abs(account.balance).toLocaleString(undefined, { minimumFractionDigits: 2 })}
           </span>
@@ -249,7 +249,7 @@ export default function AccountHistoryPage() {
                     </span>
                   </td>
                   <td className={txn.type === 'credit' ? styles.amountCredit : styles.amountDebit}>
-                    {txn.type === 'credit' ? '+' : '−'} CHF {txn.amount.toLocaleString(undefined, { minimumFractionDigits: 2 })}
+                    {txn.type === 'credit' ? '+' : '−'} £{txn.amount.toLocaleString(undefined, { minimumFractionDigits: 2 })}
                   </td>
                 </tr>
               ))}
@@ -320,7 +320,7 @@ export default function AccountHistoryPage() {
               <div className={styles.receiptRow} style={{ borderBottom: 'none', paddingTop: '8px' }}>
                 <span className={styles.receiptLabel} style={{ fontWeight: 600 }}>Amount</span>
                 <span className={styles.receiptValue} style={{ fontSize: 'calc(20px + var(--font-add, 0px))', color: selectedTxn.type === 'credit' ? '#2e7d32' : '#c62828' }}>
-                  {selectedTxn.type === 'credit' ? '+' : '−'} CHF {selectedTxn.amount.toLocaleString(undefined, { minimumFractionDigits: 2 })}
+                  {selectedTxn.type === 'credit' ? '+' : '−'} £{selectedTxn.amount.toLocaleString(undefined, { minimumFractionDigits: 2 })}
                 </span>
               </div>
             </div>

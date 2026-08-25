@@ -127,10 +127,7 @@ export default function EnrollPage() {
           alt="Hugocrest" 
           style={{ width: '250px' }}
         />
-        <div className="lang-switcher" style={{ fontSize: 'calc(14px + var(--font-add, 0px))', color: "#666e71", display: "flex", gap: "15px" }}>
-          <span onClick={() => setLang('de')} style={{ cursor: 'pointer', fontWeight: lang === 'de' ? '600' : '400' }}>deutsch</span>
-          <span onClick={() => setLang('en')} style={{ cursor: 'pointer', fontWeight: lang === 'en' ? '600' : '400' }}>english</span>
-        </div>
+        
       </header>
 
 
