@@ -1,0 +1,400 @@
+/* ── Account History — Swiss Private Bank ── */
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  min-height: calc(100vh - 120px);
+  background: #f9f9f9;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+/* ── Back Bar ── */
+.backBar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  cursor: pointer;
+  color: #047857;
+  font-size: calc(15px + var(--font-add, 0px));
+  font-weight: 600;
+  transition: opacity 0.2s;
+  text-decoration: none;
+}
+
+.backBar:hover {
+  opacity: 0.75;
+}
+
+/* ── Account Header ── */
+.accountHeader {
+  padding: 24px 20px 28px;
+  background: linear-gradient(135deg, #faf8f4 0%, #f5f5f5 100%);
+  border-bottom: 2px solid rgba(186, 161, 111, 0.2);
+}
+
+.accountMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.accountName {
+  font-size: calc(22px + var(--font-add, 0px));
+  font-weight: 600;
+  color: #424242;
+  margin: 0 0 4px;
+}
+
+.accountNumber {
+  font-size: calc(13px + var(--font-add, 0px));
+  color: #999;
+  letter-spacing: 0.5px;
+}
+
+.accountType {
+  display: inline-block;
+  padding: 4px 12px;
+  background: rgba(186, 161, 111, 0.12);
+  color: #047857;
+  font-size: calc(11px + var(--font-add, 0px));
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  border-radius: 20px;
+  margin-top: 4px;
+}
+
+.balanceBlock {
+  margin-top: 20px;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.balanceLabel {
+  font-size: calc(13px + var(--font-add, 0px));
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.balanceAmount {
+  font-size: calc(32px + var(--font-add, 0px));
+  font-weight: 300;
+  color: #424242;
+  letter-spacing: -0.5px;
+}
+
+.currency {
+  font-size: calc(16px + var(--font-add, 0px));
+  color: #999;
+  font-weight: 600;
+}
+
+/* ── Toolbar ── */
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.searchBox {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px 14px;
+  transition: border-color 0.2s;
+}
+
+.searchBox:focus-within {
+  border-color: #047857;
+}
+
+.searchInput {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: calc(14px + var(--font-add, 0px));
+  color: #424242;
+  background: transparent;
+}
+
+.searchInput::placeholder {
+  color: #bbb;
+}
+
+.toolBtn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.toolBtn:hover {
+  border-color: #047857;
+  background: rgba(186, 161, 111, 0.06);
+}
+
+/* ── Transaction Table ── */
+.tableWrap {
+  padding: 0 20px 20px;
+}
+
+.sectionTitle {
+  font-size: calc(13px + var(--font-add, 0px));
+  font-weight: 700;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 20px 0 12px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableHead th {
+  text-align: left;
+  font-size: calc(11px + var(--font-add, 0px));
+  font-weight: 700;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 10px 12px;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.tableHead th:last-child {
+  text-align: right;
+}
+
+.tableRow {
+  transition: background 0.15s;
+  cursor: default;
+}
+
+.tableRow:hover {
+  background: rgba(186, 161, 111, 0.04);
+}
+
+.tableRow td {
+  padding: 14px 12px;
+  font-size: calc(14px + var(--font-add, 0px));
+  color: #424242;
+  border-bottom: 1px solid #f0f0f0;
+  vertical-align: top;
+}
+
+.tableRow td:last-child {
+  text-align: right;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.txDate {
+  color: #999;
+  font-size: calc(12px + var(--font-add, 0px));
+  white-space: nowrap;
+}
+
+.txTime {
+  color: #bbb;
+  font-size: calc(11px + var(--font-add, 0px));
+  white-space: nowrap;
+  margin-top: 2px;
+}
+
+.txDesc {
+  font-weight: 500;
+  color: #424242;
+}
+
+.txSubDesc {
+  font-size: calc(12px + var(--font-add, 0px));
+  color: #999;
+  margin-top: 2px;
+}
+
+.txType {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: calc(12px + var(--font-add, 0px));
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.typeCredit {
+  background: rgba(46, 125, 50, 0.08);
+  color: #2e7d32;
+}
+
+.typeDebit {
+  background: rgba(198, 40, 40, 0.06);
+  color: #c62828;
+}
+
+.amountCredit {
+  color: #2e7d32;
+}
+
+.amountDebit {
+  color: #c62828;
+}
+
+.statusDot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.statusCompleted {
+  background: #2e7d32;
+}
+
+.statusPending {
+  background: #f59e0b;
+}
+
+.statusText {
+  font-size: calc(12px + var(--font-add, 0px));
+  color: #999;
+}
+
+/* ── Empty State ── */
+.emptyState {
+  text-align: center;
+  padding: 60px 20px;
+  color: #999;
+}
+
+.emptyIcon {
+  font-size: calc(48px + var(--font-add, 0px));
+  margin-bottom: 12px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .balanceAmount {
+    font-size: calc(26px + var(--font-add, 0px));
+  }
+
+  .accountName {
+    font-size: calc(18px + var(--font-add, 0px));
+  }
+
+  .table {
+    font-size: calc(13px + var(--font-add, 0px));
+  }
+
+  .tableHead th {
+    font-size: calc(10px + var(--font-add, 0px));
+    padding: 8px 8px;
+  }
+
+  .tableRow td {
+    padding: 12px 8px;
+    font-size: calc(13px + var(--font-add, 0px));
+  }
+
+  .toolbar {
+    flex-wrap: wrap;
+  }
+
+  .hideOnMobile {
+    display: none;
+  }
+}
+
+/* ── Transaction Modal ── */
+.modalOverlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+}
+
+.modalContent {
+  background: #fff;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  padding: 24px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+  position: relative;
+}
+
+.modalClose {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #999;
+}
+
+.modalClose:hover {
+  color: #424242;
+}
+
+.modalHeader {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modalTitle {
+  font-size: calc(18px + var(--font-add, 0px));
+  font-weight: 600;
+  color: #424242;
+  margin: 0;
+}
+
+.receiptDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.receiptRow {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #eee;
+  padding-bottom: 8px;
+}
+
+.receiptLabel {
+  font-size: calc(13px + var(--font-add, 0px));
+  color: #999;
+}
+
+.receiptValue {
+  font-size: calc(14px + var(--font-add, 0px));
+  font-weight: 500;
+  color: #424242;
+  text-align: right;
+}

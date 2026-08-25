@@ -1,0 +1,337 @@
+/* ── Transfer Sub-pages Shared CSS — Dark Purple Theme ── */
+
+.container {
+  background-color: #424242fff;
+  min-height: calc(100vh - 70px);
+}
+
+/* ── Header ── */
+.pageHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  background: rgba(26, 5, 51, 0.9);
+  border-bottom: 1px solid #eeeeee;
+}
+
+.backBtn,
+.closeBtn,
+.sheetClose {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #047857;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  transition: background 0.15s;
+}
+
+.backBtn:hover,
+.closeBtn:hover,
+.sheetClose:hover {
+  background: rgba(186, 161, 111, 0.15);
+}
+
+.pageTitle {
+  font-size: calc(17px + var(--font-add, 0px));
+  font-weight: 600;
+  color: #424242;
+  margin: 0;
+  flex: 1;
+  text-align: center;
+}
+
+/* ── Body ── */
+.body {
+  padding: 0 16px;
+  background-color: #424242fff;
+  margin-top: 8px;
+  border-top: 1px solid #eeeeee;
+}
+
+.fieldRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+.placeholderText {
+  font-size: calc(19px + var(--font-add, 0px));
+  font-weight: 300;
+  color: #047857;
+}
+
+.selectedText {
+  font-size: calc(17px + var(--font-add, 0px));
+  font-weight: 400;
+  color: #666e71;
+}
+
+.iconCircle {
+  width: 30px;
+  height: 30px;
+  background: rgba(186, 161, 111, 0.2);
+  border: 1px solid #eeeeee;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.divider {
+  height: 1px;
+  background-color: #eeeeee;
+  margin: 0;
+}
+
+.addLink {
+  color: #047857;
+  font-size: calc(15px + var(--font-add, 0px));
+  text-decoration: underline;
+  text-align: center;
+  padding: 22px 0 12px;
+  cursor: pointer;
+  transition: color 0.15s;
+}
+
+.addLink:hover {
+  color: #666e71;
+}
+
+.infoText {
+  font-size: calc(13px + var(--font-add, 0px));
+  color: #047857;
+  line-height: 1.55;
+  padding-bottom: 20px;
+}
+
+/* ── Bottom Sheet Modal ── */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: 200;
+}
+
+.sheet {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  border-radius: 16px 16px 0 0;
+  border-top: 2px solid #047857;
+  z-index: 201;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.sheetHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 16px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.sheetTitle {
+  font-size: calc(17px + var(--font-add, 0px));
+  font-weight: 600;
+  color: #666e71;
+}
+
+.sheetOption {
+  padding: 18px 16px;
+  border-bottom: 1px solid #eeeeee;
+  cursor: pointer;
+  transition: background 0.12s;
+}
+
+.sheetOption:hover {
+  background: rgba(186, 161, 111, 0.1);
+}
+
+.optionName {
+  font-size: calc(15px + var(--font-add, 0px));
+  font-weight: 500;
+  color: #666e71;
+  margin-bottom: 4px;
+}
+
+.optionDetail {
+  font-size: calc(13px + var(--font-add, 0px));
+  color: #666e71;
+}
+
+.sheetAddOption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 16px;
+  cursor: pointer;
+  font-size: calc(15px + var(--font-add, 0px));
+  color: #047857;
+  transition: background 0.12s;
+}
+
+.sheetAddOption:hover {
+  background: rgba(186, 161, 111, 0.1);
+}
+
+/* ── Deposit Checks ── */
+.depositBody {
+  padding: 28px 20px;
+  background: #ffffff;
+  margin-top: 8px;
+  border-top: 1px solid #eeeeee;
+}
+
+.depositIntro {
+  font-size: calc(14px + var(--font-add, 0px));
+  color: #666e71;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.stepList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.step {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.stepNum {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #047857;
+  color: #424242;
+  font-size: calc(14px + var(--font-add, 0px));
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+  box-shadow: 0 2px 8px rgba(186, 161, 111, 0.4);
+}
+
+.stepText {
+  font-size: calc(14px + var(--font-add, 0px));
+  color: #666e71;
+  line-height: 1.5;
+  padding-top: 4px;
+}
+
+.primaryBtn {
+  width: 100%;
+  padding: 15px;
+  background: #047857;
+  color: #424242;
+  border: none;
+  border-radius: 30px;
+  font-size: calc(15px + var(--font-add, 0px));
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 16px rgba(186, 161, 111, 0.4);
+}
+
+.primaryBtn:hover {
+  background: #047857;
+  box-shadow: 0 6px 24px rgba(186, 161, 111, 0.6);
+  transform: translateY(-1px);
+}
+
+/* ── List Layout (Pay Bills / Pay WF / Recurring) ── */
+.sectionBody {
+  background: #ffffff;
+  margin-top: 8px;
+  border-top: 1px solid #eeeeee;
+}
+
+.sectionList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sectionItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17px 16px;
+  border-bottom: 1px solid #eeeeee;
+  cursor: pointer;
+  text-decoration: none;
+  color: #666e71;
+  font-size: calc(15px + var(--font-add, 0px));
+  transition: background 0.12s;
+}
+
+.sectionItem:hover {
+  background: rgba(186, 161, 111, 0.1);
+}
+
+.itemMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.itemLabel {
+  font-size: calc(15px + var(--font-add, 0px));
+  color: #666e71;
+  font-weight: 400;
+}
+
+.itemSub {
+  font-size: calc(13px + var(--font-add, 0px));
+  color: #047857;
+}
+
+.emptyState {
+  padding: 40px 20px;
+  text-align: center;
+  color: #047857;
+  font-size: calc(14px + var(--font-add, 0px));
+  line-height: 1.6;
+}
+
+.emptyIcon {
+  font-size: calc(36px + var(--font-add, 0px));
+  margin-bottom: 12px;
+}
+
+/* ── Add Payee CTA ── */
+.addPayeeRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  border-top: 1px solid #eeeeee;
+  cursor: pointer;
+  background: #ffffff;
+  color: #047857;
+  font-size: calc(15px + var(--font-add, 0px));
+  font-weight: 500;
+  transition: background 0.15s;
+}
+
+.addPayeeRow:hover {
+  background: rgba(186, 161, 111, 0.1);
+}

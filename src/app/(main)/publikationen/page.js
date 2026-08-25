@@ -1,0 +1,26 @@
+
+export default function Page() {
+  return (
+    <main id="brx-content" dangerouslySetInnerHTML={{ __html: `<section id="brxe-c6baab" class="brxe-section bricks-lazy-hidden"><div id="brxe-c8cbcf" class="brxe-container cu-header-container bricks-lazy-hidden"><div id="brxe-06f3bb" class="brxe-block cu-header-col-1 bricks-lazy-hidden"><div id="brxe-616c9d" class="brxe-block cu-header-txt-block bricks-lazy-hidden"><div id="brxe-619321" class="brxe-block bricks-lazy-hidden"><h1 id="brxe-8e052e" class="brxe-heading">Unsere Publikationen</h1><div id="brxe-1e2ee7" class="brxe-text"><p>Bleiben Sie informiert mit unseren aktuellen Publikationen. Erfahren Sie mehr über Marktanalysen, Finanztrends und die neuesten Entwicklungen in unserer Bank.</p>
+</div><a id="brxe-b682d6" class="brxe-button bricks-button bricks-background-primary" href="/kontakt/">Jetzt kontaktieren</a></div></div></div><div id="brxe-0a799b" class="brxe-block cu-header-col-2 bricks-lazy-hidden"></div></div><div id="brxe-272222" class="brxe-container cu-first-content-section zz-section zz-left bricks-lazy-hidden"><div id="brxe-4f1201" class="brxe-block side-padding img-col bricks-lazy-hidden"></div><div id="brxe-590cd2" class="brxe-block txt-col bricks-lazy-hidden"><div id="brxe-77bc24" class="brxe-block txt-col-block bricks-lazy-hidden"><h3 id="brxe-953771" class="brxe-heading">Informationen für Investoren und Medien</h3><div id="brxe-d29da2" class="brxe-text"><p>Finden Sie umfassende und aktuelle Informationen für Investoren und Medienvertreter.</p>
+</div><a id="brxe-16675c" class="brxe-button bricks-button bricks-background-primary" href="/informationen-fur-investoren-und-medien/">Mehr erfahren</a></div></div></div><div id="brxe-719aee" class="brxe-container zz-section zz-right bricks-lazy-hidden"><div id="brxe-63181b" class="brxe-block txt-col bricks-lazy-hidden"><div id="brxe-8faf3f" class="brxe-block txt-col-block bricks-lazy-hidden"><h3 id="brxe-e818d0" class="brxe-heading">Kundenmagazin «Investor»</h3><div id="brxe-f65f4c" class="brxe-text"><p>Lesen Sie unser Kundenmagazin «Investor» und bleiben Sie informiert über die neuesten Entwicklungen und Trends im Finanzbereich.</p>
+</div><a id="brxe-9a6570" class="brxe-button bricks-button bricks-background-primary" href="/investor/">Mehr erfahren</a></div></div><div id="brxe-feb1d1" class="brxe-block img-col bricks-lazy-hidden"></div></div><div id="brxe-07ccc8" class="brxe-container cu-first-content-section zz-section zz-left bricks-lazy-hidden"><div id="brxe-577dd8" class="brxe-block side-padding img-col bricks-lazy-hidden"></div><div id="brxe-ff919b" class="brxe-block txt-col bricks-lazy-hidden"><div id="brxe-d8ccc0" class="brxe-block txt-col-block bricks-lazy-hidden"><h3 id="brxe-70db2a" class="brxe-heading">Finanzpublikationen</h3><div id="brxe-db882c" class="brxe-text"><p>Durchstöbern Sie unsere Finanzpublikationen für detaillierte Analysen, Berichte und Einblicke in die Finanzwelt.</p>
+</div><a id="brxe-5cc5d5" class="brxe-button bricks-button bricks-background-primary" href="/finanzpublikationen/">Mehr erfahren</a></div></div></div></section><div id="brxe-fee262" class="brxe-template"><section id="brxe-409fcc" class="brxe-section bricks-lazy-hidden"><div id="brxe-e1548e" class="brxe-container bricks-lazy-hidden"><div id="brxe-887bad" class="brxe-block side-padding bricks-lazy-hidden"><div id="brxe-52b1d0" class="brxe-block bricks-lazy-hidden"><div id="brxe-fa1e1e" class="brxe-block bricks-lazy-hidden"><h3 id="brxe-132b1d" class="brxe-heading">Newsletter</h3><div id="brxe-1c4dd2" class="brxe-text"><p>Erfahren Sie als Erster von den neuesten Entwicklungen und nützlichen Finanztipps. Melden Sie sich jetzt für unseren Newsletter an und verpassen Sie keine wichtigen Updates mehr.</p>
+</div></div></div><div id="brxe-ffc162" class="brxe-block bricks-lazy-hidden">		<form id="formEmail" data-script-id="1a6463" class="brxe-form" method="post" data-element-id="1a6463" data-lang="de_DE">
+			
+				<div class="form-group" role="group">
+				<input id="form-field-f73403" name="form-field-ef0813" aria-label="Email" type="email" value="" placeholder="E-Mail-Adresse" maxlength="320" required="">
+				
+				
+							</div>
+				
+			<div class="form-group submit-button-wrapper">
+				<button type="submit" class="bricks-button bricks-background-primary">
+					<span class="text">Anmelden</span><span class="loading"><svg version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke-linecap="round" stroke-width="1" stroke="currentColor" fill="none" stroke-linejoin="round"><path d="M0.927,10.199l2.787,4.151l3.205,-3.838"></path><path d="M23.5,14.5l-2.786,-4.15l-3.206,3.838"></path><path d="M20.677,10.387c0.834,4.408 -2.273,8.729 -6.509,9.729c-2.954,0.699 -5.916,-0.238 -7.931,-2.224"></path><path d="M3.719,14.325c-1.314,-4.883 1.969,-9.675 6.538,-10.753c3.156,-0.747 6.316,0.372 8.324,2.641"></path></g><path fill="none" d="M0,0h24v24h-24Z"></path></svg>
+</span>				</button>
+			</div>
+		</form>
+		</div></div></div></section></div>` }} />
+  );
+}
+      

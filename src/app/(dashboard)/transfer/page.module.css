@@ -1,0 +1,306 @@
+/* ── Transfer Money — Dark Purple Theme ── */
+
+.transferContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px 20px;
+  background-color: #424242fff;
+  min-height: calc(100vh - 120px);
+}
+
+.pageTitle {
+  font-size: calc(24px + var(--font-add, 0px));
+  font-weight: 300;
+  color: #424242;
+  margin-bottom: 40px;
+}
+
+.selectionGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.selectRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.selectText {
+  flex: 1;
+}
+
+.placeholder {
+  font-size: calc(20px + var(--font-add, 0px));
+  font-weight: 300;
+  color: #047857;
+}
+
+.selectedAccount {
+  font-size: calc(20px + var(--font-add, 0px));
+  font-weight: 400;
+  color: #666e71;
+}
+
+.iconCircle {
+  width: 32px;
+  height: 32px;
+  background: rgba(186, 161, 111, 0.2);
+  border: 1px solid #eeeeee;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addAccountLinkWrapper {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.addAccountLink {
+  color: #047857;
+  font-size: calc(16px + var(--font-add, 0px));
+  text-decoration: underline;
+}
+
+.infoText {
+  font-size: calc(13px + var(--font-add, 0px));
+  color: #047857;
+  line-height: 1.5;
+}
+
+/* Modal Styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+}
+
+.modalSheet {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 16px 16px 0 0;
+  border-top: 2px solid #047857;
+  z-index: 101;
+  display: flex;
+  flex-direction: column;
+  max-height: 80vh;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.modalHeader h2 {
+  font-size: calc(20px + var(--font-add, 0px));
+  font-weight: 300;
+  color: #666e71;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #047857;
+}
+
+.modalBody {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.modalOption {
+  padding: 20px;
+  border-bottom: 1px solid #eeeeee;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.modalOption:hover {
+  background: rgba(186, 161, 111, 0.1);
+}
+
+.accountName {
+  font-size: calc(16px + var(--font-add, 0px));
+  color: #666e71;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.accountDetails {
+  font-size: calc(13px + var(--font-add, 0px));
+  color: #666e71;
+}
+
+.addNonWFOption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.addNonWFOption:hover {
+  background: rgba(186, 161, 111, 0.1);
+}
+
+.addNonWFText {
+  font-size: calc(16px + var(--font-add, 0px));
+  color: #047857;
+}
+
+/* ── International Transfer Banner ── */
+.internationalBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+  margin-top: 8px;
+  border: 1px solid rgba(186, 161, 111, 0.35);
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(186, 161, 111, 0.08) 0%, rgba(186, 161, 111, 0.02) 100%);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.internationalBanner:hover {
+  border-color: #047857;
+  background: linear-gradient(135deg, rgba(186, 161, 111, 0.14) 0%, rgba(186, 161, 111, 0.06) 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(186, 161, 111, 0.12);
+}
+
+.internationalBannerLeft {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.internationalIconWrap {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(186, 161, 111, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.internationalTitle {
+  font-size: calc(15px + var(--font-add, 0px));
+  font-weight: 600;
+  color: #424242;
+  margin-bottom: 2px;
+}
+
+.internationalSubtitle {
+  font-size: calc(12px + var(--font-add, 0px));
+  color: #999;
+}
+
+/* ── International Transfer Form ── */
+.intlBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background: rgba(186, 161, 111, 0.12);
+  color: #047857;
+  border-radius: 20px;
+  font-size: calc(12px + var(--font-add, 0px));
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.formField {
+  margin-bottom: 20px;
+}
+
+.fieldLabel {
+  display: block;
+  font-size: calc(12px + var(--font-add, 0px));
+  font-weight: 600;
+  color: #666e71;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.fieldInput {
+  width: 100%;
+  padding: 13px 14px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  outline: none;
+  font-size: calc(15px + var(--font-add, 0px));
+  color: #424242;
+  background: #fafafa;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.fieldInput:focus {
+  border-color: #047857;
+  box-shadow: 0 0 0 3px rgba(186, 161, 111, 0.12);
+  background: #fff;
+}
+
+.fieldInput::placeholder {
+  color: #bbb;
+}
+
+.fieldHint {
+  display: block;
+  font-size: calc(11px + var(--font-add, 0px));
+  color: #999;
+  margin-top: 4px;
+}
+
+.intlSubmitBtn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background: linear-gradient(135deg, #047857 0%, #d4b97a 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: calc(15px + var(--font-add, 0px));
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 8px;
+}
+
+.intlSubmitBtn:hover {
+  background: linear-gradient(135deg, #a8914f 0%, #047857 100%);
+  box-shadow: 0 4px 14px rgba(186, 161, 111, 0.3);
+}
+
+.intlDisclaimer {
+  font-size: calc(11px + var(--font-add, 0px));
+  color: #999;
+  text-align: center;
+  margin-top: 16px;
+  line-height: 1.5;
+}

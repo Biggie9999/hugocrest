@@ -1,0 +1,135 @@
+/* ── Messages Page — White Text + Cyan Secondary ── */
+
+.messagesContainer {
+  background-color: #ffffff;
+  min-height: calc(100vh - 120px);
+}
+
+.pageTitle {
+  font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+  font-size: calc(18px + var(--font-add, 0px));
+  font-weight: 700;
+  text-align: center;
+  color: #424242;
+  background: #ffffff;
+  padding: 24px 0 16px;
+  margin: 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.tabsContainer {
+  display: flex;
+  background: #ffffff;
+  padding: 0;
+}
+
+.tabBtn {
+  flex: 1;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 16px 0;
+  cursor: pointer;
+  color: #999999;
+  font-size: calc(14px + var(--font-add, 0px));
+  font-weight: 600;
+  transition: all 0.15s;
+}
+
+.activeTab {
+  border-bottom: 2px solid #8b0000;
+  color: #424242;
+}
+
+.contentArea { background-color: #f9f9f9; min-height: 50vh; }
+
+.sortContainer {
+  padding: 12px 16px;
+  background: #f4f4f4;
+}
+
+.sortSelect {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  color: #424242;
+  font-size: calc(14px + var(--font-add, 0px));
+  cursor: pointer;
+}
+
+.actionsBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: #fdfdfd;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.actionsText {
+  color: #8b0000;
+  font-weight: 700;
+  font-size: calc(14px + var(--font-add, 0px));
+}
+
+.contactLink {
+  color: #8b0000;
+  font-size: calc(14px + var(--font-add, 0px));
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.contactLink:hover { color: #5c0000; }
+
+.emptyState {
+  text-align: center;
+  padding: 60px 20px;
+  color: #666666;
+  font-size: calc(14px + var(--font-add, 0px));
+}
+
+.messageList {
+  display: flex;
+  flex-direction: column;
+}
+
+.messageItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+  transition: background 0.15s;
+}
+
+.messageItem:hover { background: rgba(186, 161, 111, 0.04); }
+
+.messageContent { flex: 1; }
+
+.messageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 6px;
+}
+
+.messageSender {
+  font-size: calc(13px + var(--font-add, 0px));
+  color: #999999;
+}
+
+.messageDate {
+  font-size: calc(11px + var(--font-add, 0px));
+  color: #999999;
+  text-align: right;
+  line-height: 1.4;
+}
+
+.messageSubject {
+  font-size: calc(15px + var(--font-add, 0px));
+  color: #424242;
+  font-weight: 500;
+}
+

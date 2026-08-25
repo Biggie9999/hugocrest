@@ -1,0 +1,222 @@
+/* ── Ally Financial Dashboard Layout — White Text + Cyan Secondary ── */
+
+.dashboardLayout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding-bottom: 70px;
+}
+
+.header {
+  background: #ffffff;
+  padding: 16px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  border-bottom: 2px solid #047857;
+  box-shadow: 0 2px 24px rgba(186, 161, 111, 0.35);
+}
+
+.logo {
+  color: #424242;
+  font-family: 'Plus Jakarta Sans', 'Arial', sans-serif;
+  font-size: calc(18px + var(--font-add, 0px));
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  background: #047857;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.mainContent { flex: 1; }
+
+/* ── Bottom Nav ── */
+.bottomNav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top: 1px solid #eeeeee;
+  z-index: 50;
+  padding-bottom: env(safe-area-inset-bottom, 10px);
+  box-shadow: 0 -4px 24px rgba(0,0,0,0.4);
+}
+
+.navItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: #999999;
+  font-size: calc(11px + var(--font-add, 0px));
+  font-weight: 600;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex: 1;
+  transition: color 0.2s;
+}
+
+.navItem:hover { color: #666e71; }
+
+.navItem.active {
+  color: #047857;        /* ← cyan active state */
+}
+
+/* ── Slide-out Menu ── */
+.slideOutMenu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 85%;
+  max-width: 400px;
+  height: 100vh;
+  background: #ffffff;
+  z-index: 100;
+  box-shadow: -4px 0 40px rgba(0,0,0,0.6);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  border-left: 1px solid #eeeeee;
+}
+
+.menuHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.menuTitle {
+  font-weight: 800;
+  font-size: calc(18px + var(--font-add, 0px));
+  color: #424242;
+  letter-spacing: 1px;
+}
+
+.closeBtn {
+  font-size: calc(20px + var(--font-add, 0px));
+  padding: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666e71;
+  transition: color 0.15s;
+}
+
+.closeBtn:hover { color: #047857; }
+
+.profileSection {
+  background: rgba(186, 161, 111, 0.1);
+  padding: 20px 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px solid #eeeeee;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.2s;
+}
+
+.profileSection:hover { background: rgba(186, 161, 111, 0.18); }
+
+.profileAvatar {
+  width: 50px;
+  height: 50px;
+  background: #047857;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #424242;
+}
+
+.profileAvatar svg { width: 30px; height: 30px; }
+
+.profileInfo { flex: 1; }
+
+.profileName {
+  font-weight: 700;
+  font-size: calc(18px + var(--font-add, 0px));
+  color: #424242;
+}
+
+.profileSub {
+  font-size: calc(13px + var(--font-add, 0px));
+  color: #666e71;
+  margin-top: 4px;
+}
+
+.menuLinks {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menuLinks li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #eeeeee;
+  cursor: pointer;
+}
+
+.menuItemText {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.menuItemText strong {
+  font-size: calc(15px + var(--font-add, 0px));
+  color: #424242;
+}
+
+.menuItemText span {
+  font-size: calc(13px + var(--font-add, 0px));
+  color: #999999;
+}
+
+.chevron {
+  color: #047857;        /* ← cyan chevrons */
+  font-weight: bold;
+}
+
+.menuFooter {
+  background: rgba(186, 161, 111, 0.04);
+  padding: 20px 16px;
+  font-size: calc(13px + var(--font-add, 0px));
+  color: #999999;
+  border-top: 1px solid #eeeeee;
+}
+
+.menuFooter a {
+  color: #047857;
+  text-decoration: underline;
+}
+
+.menuLinkItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #eeeeee;
+  cursor: pointer;
+  text-decoration: none;
+  color: #424242;
+  transition: background 0.15s;
+}
+
+.menuLinkItem:hover { background: rgba(186, 161, 111, 0.06); }

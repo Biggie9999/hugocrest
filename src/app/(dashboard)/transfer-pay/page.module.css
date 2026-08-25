@@ -1,0 +1,81 @@
+/* ── Transfer & Pay Menu — Dark Purple Theme ── */
+
+.container {
+  background-color: #424242fff;
+  min-height: calc(100vh - 70px);
+}
+
+.pageHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  background: #ffffff;
+  border-bottom: 2px solid rgba(186, 161, 111, 0.3);
+}
+
+.backBtn,
+.closeBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #047857;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background 0.15s;
+}
+
+.backBtn:hover,
+.closeBtn:hover {
+  background: rgba(186, 161, 111, 0.15);
+}
+
+.pageTitle {
+  font-size: calc(17px + var(--font-add, 0px));
+  font-weight: 600;
+  color: #424242;
+  margin: 0;
+  text-align: center;
+  flex: 1;
+}
+
+.menuList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #424242fff;
+  margin-top: 8px;
+  border-top: 1px solid #eeeeee;
+}
+
+.menuItem {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.menuLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17px 16px;
+  text-decoration: none;
+  color: #666e71;
+  font-size: calc(15px + var(--font-add, 0px));
+  font-weight: 400;
+  transition: background-color 0.15s;
+}
+
+.menuLink:hover {
+  background: rgba(186, 161, 111, 0.12);
+}
+
+.menuLink:active {
+  background: rgba(186, 161, 111, 0.2);
+}
+
+.menuLabel {
+  font-size: calc(15px + var(--font-add, 0px));
+  color: #666e71;
+}

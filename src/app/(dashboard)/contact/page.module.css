@@ -1,0 +1,297 @@
+/* ── Contact / Profile Page — Dark Purple Theme ── */
+
+.page {
+  background: #ffffff;
+  min-height: calc(100vh - 70px);
+  padding-bottom: 40px;
+  color: #666e71;
+}
+
+.header {
+  padding: 12px 16px 0;
+}
+
+.backBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #047857;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: calc(22px + var(--font-add, 0px));
+  font-weight: 400;
+  color: #666e71;
+  padding: 12px 16px 20px;
+  margin: 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+/* ─── Accordion ── */
+.accordion {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.accordionHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: calc(15px + var(--font-add, 0px));
+  color: #666e71;
+  transition: background 0.15s;
+}
+
+.accordionHeader:hover {
+  background: rgba(186, 161, 111, 0.08);
+}
+
+.accordionLabel {
+  font-size: calc(15px + var(--font-add, 0px));
+  color: #666e71;
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+.accordionBody {
+  padding: 0 16px 20px;
+  border-top: 1px solid #eeeeee;
+  background: rgba(186, 161, 111, 0.04);
+}
+
+/* ─── Inputs ── */
+.inputGroup {
+  margin-bottom: 16px;
+}
+
+.inputLabel {
+  display: block;
+  font-size: calc(12px + var(--font-add, 0px));
+  color: #666e71;
+  margin-bottom: 4px;
+}
+
+.input {
+  width: 100%;
+  font-size: calc(15px + var(--font-add, 0px));
+  color: #666e71;
+  border: none;
+  border-bottom: 2px solid #047857;
+  padding: 8px 0;
+  background: transparent;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.inputEmpty {
+  border-bottom-color: #eeeeee;
+  color: #047857;
+}
+
+/* ─── Save button ── */
+.saveBtn {
+  width: 100%;
+  padding: 14px;
+  background: rgba(186, 161, 111, 0.15);
+  color: #047857;
+  border: 1px solid #eeeeee;
+  border-radius: 30px;
+  font-size: calc(15px + var(--font-add, 0px));
+  font-weight: 600;
+  margin-top: 12px;
+  cursor: not-allowed;
+}
+
+/* ─── Phone section ── */
+.phoneHelpRow {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 0 4px;
+}
+
+.helpLink {
+  color: #047857;
+  font-size: calc(14px + var(--font-add, 0px));
+  text-decoration: underline;
+}
+
+.phoneGroup {
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.phoneLabel {
+  display: block;
+  font-size: calc(13px + var(--font-add, 0px));
+  color: #666e71;
+  margin-bottom: 6px;
+}
+
+.checkRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  accent-color: #047857;
+}
+
+.checkLabel {
+  font-size: calc(13px + var(--font-add, 0px));
+  color: #666e71;
+  line-height: 1.4;
+}
+
+.learnMore {
+  color: #047857;
+  text-decoration: underline;
+  font-size: calc(13px + var(--font-add, 0px));
+}
+
+.selectWrapper {
+  border-bottom: 1px solid #eeeeee;
+  margin-top: 6px;
+}
+
+.select {
+  width: 100%;
+  font-size: calc(15px + var(--font-add, 0px));
+  color: #666e71;
+  border: none;
+  background: transparent;
+  padding: 8px 0;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%23a78bfa' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 4px center;
+  padding-right: 28px;
+}
+
+/* ─── Address section ── */
+.uspsNotice {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  background: rgba(186, 161, 111, 0.08);
+  border: 1px solid #eeeeee;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 16px;
+  font-size: calc(13px + var(--font-add, 0px));
+  color: #666e71;
+  line-height: 1.5;
+}
+
+.addressGroup {
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.addressGroupTitle {
+  font-size: calc(15px + var(--font-add, 0px));
+  font-weight: 700;
+  color: #666e71;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.homeIcon {
+  color: #047857;
+}
+
+.addressRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 6px;
+}
+
+.addressText {
+  font-size: calc(14px + var(--font-add, 0px));
+  color: #666e71;
+  line-height: 1.6;
+}
+
+.editLink {
+  background: none;
+  border: none;
+  color: #047857;
+  font-size: calc(14px + var(--font-add, 0px));
+  cursor: pointer;
+  flex-shrink: 0;
+  padding-top: 2px;
+  text-decoration: underline;
+}
+
+.addMailingLink {
+  display: block;
+  color: #047857;
+  font-size: calc(14px + var(--font-add, 0px));
+  font-weight: 600;
+  text-decoration: underline;
+  margin-bottom: 4px;
+}
+
+.assocRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  width: 100%;
+  padding: 10px 0;
+  font-size: calc(13px + var(--font-add, 0px));
+  color: #666e71;
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+.addressDisclaimer {
+  font-size: calc(12px + var(--font-add, 0px));
+  color: #047857;
+  line-height: 1.6;
+  margin-top: 12px;
+}
+
+/* ─── Disclosures ── */
+.disclosures {
+  padding: 24px 16px 0;
+}
+
+.disclosureTitle {
+  font-size: calc(13px + var(--font-add, 0px));
+  font-weight: 700;
+  color: #047857;
+  margin-bottom: 6px;
+}
+
+.disclosureText {
+  font-size: calc(13px + var(--font-add, 0px));
+  color: #047857;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
