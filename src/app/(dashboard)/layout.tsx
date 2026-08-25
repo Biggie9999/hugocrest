@@ -65,7 +65,7 @@ function DashboardShell({ children }: { children: React.ReactNode }) {
   return (
         <div className={styles.dashboardLayout}>
             <header className={styles.header}>
-              <img src="https://www.hugocrest.com/wp-content/uploads/2024/07/logo.svg" alt="Hugocrest" style={{ width: "200px" }} />
+              <img src="/wp-content/uploads/2024/07/Pages-logo-8.webp" alt="Hugocrest" style={{ width: "200px" }} />
             </header>
 
             <main className={styles.mainContent}>

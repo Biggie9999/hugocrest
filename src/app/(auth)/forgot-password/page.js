@@ -106,7 +106,7 @@ export default function ForgotPasswordPage() {
 
       <header className="auth-header">
         <img 
-          src="https://www.hugocrest.com/wp-content/uploads/2024/07/logo.svg" 
+          src="/wp-content/uploads/2024/07/Pages-logo-8.webp" 
           alt="Hugocrest" 
           style={{ width: '250px' }}
         />
