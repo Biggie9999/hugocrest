@@ -113,7 +113,7 @@ function DashboardShell({ children }: { children: React.ReactNode }) {
                   {user?.email === 'admin@gmail.com' && (
                     <Link href="/admin" className={styles.menuLinkItem} onClick={() => setIsMenuOpen(false)}>
                       <div className={styles.menuItemText}>
-                        <strong style={{ color: '#d32f2f' }}>Admin Panel</strong>
+                        <strong style={{ color: '#047857' }}>Admin Panel</strong>
                         <span>Manage users, balances, and transactions</span>
                       </div>
                       <ChevronRight size={20} color="#047857" />

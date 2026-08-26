@@ -37,7 +37,7 @@
 }
 
 .activeTab {
-  border-bottom: 2px solid #8b0000;
+  border-bottom: 2px solid #047857;
   color: #424242;
 }
 
@@ -68,19 +68,19 @@
 }
 
 .actionsText {
-  color: #8b0000;
+  color: #047857;
   font-weight: 700;
   font-size: calc(14px + var(--font-add, 0px));
 }
 
 .contactLink {
-  color: #8b0000;
+  color: #047857;
   font-size: calc(14px + var(--font-add, 0px));
   text-decoration: none;
   transition: color 0.15s;
 }
 
-.contactLink:hover { color: #5c0000; }
+.contactLink:hover { color: #02553d; }
 
 .emptyState {
   text-align: center;
