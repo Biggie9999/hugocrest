@@ -13,15 +13,15 @@ import { useRouter } from 'next/navigation';
 // ─── account action trays ───────────────────────────────────────────────────
 const accountActions: Record<string, { icon: React.ReactNode; label: string; href: string }[]> = {
   prime: [
-    { icon: <ArrowLeftRight size={26} color="#fff" />,   label: 'Transfer\nMoney',     href: '/transfer' },
-    { icon: <FileText      size={26} color="#fff" />,   label: 'View\nStatements',    href: '/messages' },
+    { icon: <ArrowLeftRight size={26} color="#047857" />,   label: 'Transfer\nMoney',     href: '/transfer' },
+    { icon: <FileText      size={26} color="#047857" />,   label: 'View\nStatements',    href: '/messages' },
   ],
   home: [
-    { icon: <DollarSign    size={26} color="#fff" />,   label: 'Make\nPayment',       href: '/transfer' },
-    { icon: <FileText      size={26} color="#fff" />,   label: 'View\nStatements',    href: '/messages' },
+    { icon: <DollarSign    size={26} color="#047857" />,   label: 'Make\nPayment',       href: '/transfer' },
+    { icon: <FileText      size={26} color="#047857" />,   label: 'View\nStatements',    href: '/messages' },
   ],
   flex: [
-    { icon: <FileText      size={26} color="#fff" />,   label: 'View Flex\nLoan Agreement', href: '/personal-loans' },
+    { icon: <FileText      size={26} color="#047857" />,   label: 'View Flex\nLoan Agreement', href: '/personal-loans' },
   ],
 };
 
