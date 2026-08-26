@@ -65,7 +65,7 @@ function DashboardShell({ children }: { children: React.ReactNode }) {
   return (
         <div className={styles.dashboardLayout}>
             <header className={styles.header}>
-              <img src="/wp-content/uploads/2024/07/hugo.png" alt="Hugocrest" style={{ width: "200px" }} />
+              <img src="/wp-content/uploads/2024/07/hugo-dark-1.png" alt="Hugocrest" style={{ width: "200px" }} />
             </header>
 
             <main className={styles.mainContent}>

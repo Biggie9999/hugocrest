@@ -123,7 +123,7 @@ export default function EnrollPage() {
 
       <header className="auth-header">
         <img 
-          src="/wp-content/uploads/2024/07/hugo.png" 
+          src="/wp-content/uploads/2024/07/hugo-dark-1.png" 
           alt="Hugocrest" 
           style={{ width: '250px' }}
         />
