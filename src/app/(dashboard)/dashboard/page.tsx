@@ -47,16 +47,22 @@ export default function DashboardPage() {
   ];
 
   // ─── Action Tray Row ────────────────────────────────────────────────────────
-  const ActionTray = ({ accountId }: { accountId: string }) => {
+  const ActionTray = ({ accountId, actualId }: { accountId: string, actualId: string }) => {
     const actions = accountActions[accountId] ?? [];
     return (
       <div className={styles.actionTray}>
-        {actions.map((a) => (
-          <Link href={a.href} key={a.label} className={styles.actionTrayItem}>
-            {a.icon}
-            <span style={{ whiteSpace: 'pre-line' }}>{a.label}</span>
-          </Link>
-        ))}
+        {actions.map((a) => {
+          let targetHref = a.href;
+          if (a.label.includes('Statements')) {
+            targetHref = `/account/${actualId}`;
+          }
+          return (
+            <Link href={targetHref} key={a.label} className={styles.actionTrayItem}>
+              {a.icon}
+              <span style={{ whiteSpace: 'pre-line' }}>{a.label}</span>
+            </Link>
+          );
+        })}
       </div>
     );
   };
@@ -129,7 +135,7 @@ export default function DashboardPage() {
                         </button>
                       </div>
                     </Link>
-                    {openTray === acc.id && <ActionTray accountId="prime" />}
+                    {openTray === acc.id && <ActionTray accountId="prime" actualId={acc.id} />}
                   </div>
                 ))}
               </div>
@@ -159,7 +165,7 @@ export default function DashboardPage() {
                         </button>
                       </div>
                     </Link>
-                    {openTray === acc.id && <ActionTray accountId="home" />}
+                    {openTray === acc.id && <ActionTray accountId="home" actualId={acc.id} />}
                   </div>
                 ))}
               </div>
@@ -189,7 +195,7 @@ export default function DashboardPage() {
                         </button>
                       </div>
                     </Link>
-                    {openTray === acc.id && <ActionTray accountId="prime" />}
+                    {openTray === acc.id && <ActionTray accountId="prime" actualId={acc.id} />}
                   </div>
                 ))}
               </div>
