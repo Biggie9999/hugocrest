@@ -1,7 +1,7 @@
 
 export const metadata = {
   title: 'Privacy Policy | Hugocrest',
-  description: 'Privacy policy and data protection information for Hugocrest Hugocrest Bank Zürich AG.',
+  description: 'Privacy policy and data protection information for Hugocrest Bank.',
 };
 
 export default function Page() {
@@ -30,7 +30,7 @@ export default function Page() {
           Privacy Policy
         </h1>
         <p style={{ fontSize: 'calc(17px + var(--font-add, 0px))', color: '#888', margin: 0 }}>
-          Data protection is of paramount importance to Hugocrest Hugocrest Bank Zürich AG (hereinafter &ldquo;Bank&rdquo;).
+          Data protection is of paramount importance to Hugocrest Bank (hereinafter &ldquo;Bank&rdquo;).
         </p>
       </div>
 
@@ -123,7 +123,7 @@ export default function Page() {
           marginTop: '12px',
         }}>
           <p style={{ margin: '0 0 8px', fontWeight: 'bold', color: '#047857' }}>Hugocrest</p>
-          <p style={{ margin: '0 0 4px' }}>Hugocrest Bank Zürich AG</p>
+          <p style={{ margin: '0 0 4px' }}>Hugocrest Bank</p>
           <p style={{ margin: '0 0 4px' }}>Data Protection Officer</p>
           <p style={{ margin: '0 0 4px' }}>Rämistrasse 23</p>
           <p style={{ margin: '0 0 12px' }}>8001 Zürich</p>

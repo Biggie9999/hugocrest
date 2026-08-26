@@ -235,7 +235,7 @@ export default function ContactPage() {
       {/* Disclosures */}
       <div className={styles.disclosures}>
         <p className={styles.disclosureTitle}>* Disclosures</p>
-        <p className={styles.disclosureText}>Deposit products offered by Hugocrest Hugocrest Bank Zürich AG.</p>
+        <p className={styles.disclosureText}>Deposit products offered by Hugocrest Bank.</p>
         <p className={styles.disclosureText}><Home size={12} style={{ display: 'inline', marginRight: 4 }} />Equal Housing Lender</p>
       </div>
     </div>

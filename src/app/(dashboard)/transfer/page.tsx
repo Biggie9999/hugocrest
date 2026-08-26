@@ -223,7 +223,7 @@ export default function TransferPage() {
         </div>
 
         <p style={{ textAlign: 'center', fontSize: 'calc(11px + var(--font-add, 0px))', color: '#999', marginTop: '16px', lineHeight: '1.5' }}>
-          Hugocrest Hugocrest Bank Zürich AG · This receipt serves as confirmation of your transfer.
+          Hugocrest Bank · This receipt serves as confirmation of your transfer.
         </p>
       </div>
     );

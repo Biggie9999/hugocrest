@@ -255,7 +255,7 @@ export default function DashboardPage() {
       {/* ── Disclosures ── */}
       <div className={styles.disclosures}>
         <h3>Account Disclosures</h3>
-        <p>Deposit products offered by Hugocrest Hugocrest Bank Zürich AG.</p>
+        <p>Deposit products offered by Hugocrest Bank.</p>
         <p className={styles.equalHousing}>
           <Home size={14} style={{ display: 'inline', marginRight: '4px' }} /> Equal Housing Lender
         </p>
